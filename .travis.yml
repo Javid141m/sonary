@@ -6,12 +6,7 @@ dist: xenial
 
 jdk: openjdk8
 
-git:
-  depth: false
 
-services:
-   - docker
-   - xvfb
 
 addons:
   sonarcloud:
