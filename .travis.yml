@@ -1,17 +1,4 @@
 language: java
 
 
-
-
-
-addons:
-  sonarcloud:
-    organization: "javid141m-1"
-
-# skip installation step
-install: true
-
-
-script:
-   - mvn -f com.examples.school/pom.xml -Pjacoco clean verify sonar:sonar
 mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
